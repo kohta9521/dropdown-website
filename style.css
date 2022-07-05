@@ -4,7 +4,8 @@
 }
 body {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background-image: url(./code-g243d7c8c6_1920.jpg);
+    background-size: cover;
     background-position: center;
 }

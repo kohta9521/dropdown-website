@@ -68,6 +68,13 @@
 
         document.addEventListener("click", (e) => {
             console.log(e.target.id);
+            menus.map((menu) => {
+                if (e.target.id === menu.id) {
+                    menu.classList.add("active");
+                } else {
+                    menu.classList.remove("active");
+                }
+            });
         });
     </script>
 </body>

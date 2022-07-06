@@ -11,7 +11,7 @@
 <body>
     <div class="menuBar">
         <ul>
-            <li class="active"><a href="#">ホーム</a>
+            <li class="active" id="menu1"><a href="#">ホーム</a>
                 <div class="subMenu-1">
                     <ul>
                         <li><a href="">サイトについて</a></li>
@@ -21,7 +21,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="#">オンライン相談</a>
+            <li id="menu2"><a href="#">オンライン相談</a>
                 <div class="subMenu-1">
                     <ul>
                         <li><a href="">サイトについて</a></li>
@@ -31,7 +31,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="#">ブログ</a>
+            <li id="menu3"><a href="#">ブログ</a>
                 <div class="subMenu-1">
                     <ul>
                         <li><a href="">サイトについて</a></li>
@@ -41,7 +41,7 @@
                     </ul>
                 </div>
             </li>
-            <li><a href="#">お問合せ</a>
+            <li id="menu4"><a href="#">お問合せ</a>
                 <div class="subMenu-1">
                     <ul>
                         <li><a href="">サイトについて</a></li>
@@ -59,7 +59,16 @@
     </div>
 
     <script>
-        
+        const menus = [];
+        for (let i = 1; i <= 4; i ++) {
+            let menu = document.getElementById(`menu${i}`);
+            menus.push(menu);
+            console.log(menus);
+        }
+
+        document.addEventListener("click", (e) => {
+            console.log(e.target.id);
+        });
     </script>
 </body>
 </html>

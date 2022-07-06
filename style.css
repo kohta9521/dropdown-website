@@ -32,3 +32,24 @@ body {
 .menuBar ul li:hover {
     background-color: #7fb5d9;
 }
+
+.subMenu-1 {
+    position: absolute;
+    background-color: #5599c7;
+    margin-top: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: none;
+}
+.menuBar ul li:hover .subMenu-1 {
+    display: block;
+}
+
+.menuBar ul li:hover .subMenu-1 ul li {
+    display: block;
+    width: 140px;
+    border-bottom: 1px dotted white;
+}
+.menuBar ul li:hover .subMenu-1 ul li:last-child {
+    border: none;
+}
